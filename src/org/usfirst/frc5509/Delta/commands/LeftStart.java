@@ -31,6 +31,6 @@ public class LeftStart extends ConditionalCommand {
 
     @Override
     protected boolean condition(){
-    	 return DriverStation.getInstance().getGameSpecificMessage().charAt(1) == ('L');//TODO: Auto Generated method stub
+    	 return DriverStation.getInstance().getGameSpecificMessage().charAt(0) == ('L');//TODO: Auto Generated method stub
     }
 }

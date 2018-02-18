@@ -31,6 +31,6 @@ public class RightStart extends ConditionalCommand {
 
     @Override
     protected boolean condition(){
-        return DriverStation.getInstance().getGameSpecificMessage().charAt(1) == ('R');//TODO: Auto Generated method stub
+        return DriverStation.getInstance().getGameSpecificMessage().charAt(0) == ('R');//TODO: Auto Generated method stub
     }
 }

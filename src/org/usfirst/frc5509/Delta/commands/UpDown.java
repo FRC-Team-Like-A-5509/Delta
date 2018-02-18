@@ -51,7 +51,7 @@ public class UpDown extends Command {
 		}
     	move = Math.pow(move, 3);
     	
-    	Robot.liftDrive.run(move);
+    	Robot.liftDrive.run(-move);
     }
 
     // Make this return true when this Command no longer needs to run execute()
