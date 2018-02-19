@@ -118,8 +118,8 @@ public class OI {
         SmartDashboard.putData("UpTimed: upXInches", new UpTimed(0));
         SmartDashboard.putData("CenterStart", new CenterStart());
         SmartDashboard.putData("CenterSame", new CenterSame());
-        SmartDashboard.putData("OuttakeTimed: startOutTime", new OuttakeTimed(0));
         SmartDashboard.putData("EndGameForwards", new EndGameForwards());
+        SmartDashboard.putData("OuttakeTimed: startOutTime", new OuttakeTimed(0));
         SmartDashboard.putData("EndGameBackwards", new EndGameBackwards());
         SmartDashboard.putData("EndGameStick", new EndGameStick());
 
