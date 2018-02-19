@@ -49,7 +49,7 @@ public class DriveXFeetTimed extends Command {
 	@Override
 	protected void initialize() {
 		fast = SmartDashboard.getNumber("xfeettimedfast", 2.4);
-		speed = SmartDashboard.getNumber("xfeettimedspeed", 2.4);
+		speed = SmartDashboard.getNumber("xfeettimedspeed", 0.42);
 		secondsPerFoot = .50 / fast;
 		powerToDrive = speed;
 		this.setTimeout(secondsPerFoot * Math.abs(m_distanceInFeet));

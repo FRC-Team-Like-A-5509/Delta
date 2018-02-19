@@ -93,6 +93,7 @@ public class OI {
         SmartDashboard.putData("HaloDrive", new HaloDrive());
         SmartDashboard.putData("ClaytonDrive", new ClaytonDrive());
         SmartDashboard.putData("DriveXFeetTimed: fiveFeet", new DriveXFeetTimed(5));
+        SmartDashboard.putData("DriveXFeetTimed: tenFeet", new DriveXFeetTimed(10));
         SmartDashboard.putData("turnNDegreesTimed: ninety", new turnNDegreesTimed(90));
         SmartDashboard.putData("turnNDegreesTimed: oneEighty", new turnNDegreesTimed(180));
         SmartDashboard.putData("turnNDegreesTimed: negativeNinety", new turnNDegreesTimed(-90));
@@ -133,7 +134,7 @@ public class OI {
 		SmartDashboard.putData("Drive Mode", driveMode);
 		
 		SmartDashboard.putNumber("xfeettimedfast", 2.4);
-		SmartDashboard.putNumber("xfeettimedspeed", 2.4);
+		SmartDashboard.putNumber("xfeettimedspeed", 0.42);
 
 	}
 
