@@ -43,6 +43,15 @@ public class EndGameForwards extends Command {
     // Called repeatedly when this Command is scheduled to run
     @Override
     protected void execute() {
+    	double power = 0.0;
+    	power = Robot.oi.joystick2.getRawAxis(5);
+    	if(power > 0) {
+    		Robot.endGameDrive.run(power);
+    	}else {
+    		Robot.endGameDrive.up();
+    	}
+    	
+    	
     }
 
     // Make this return true when this Command no longer needs to run execute()

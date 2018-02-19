@@ -43,6 +43,15 @@ public class EndGame extends Command {
     // Called repeatedly when this Command is scheduled to run
     @Override
     protected void execute() {
+    	double move = 0.0;
+		move = Robot.oi.getJoystick2().getRawAxis(5);
+
+		if (Math.abs(move) < .2) {
+			move = 0;
+		}
+		move = Math.pow(move, 3);
+
+		Robot.endGameDrive.run(move);
     }
 
     // Make this return true when this Command no longer needs to run execute()
