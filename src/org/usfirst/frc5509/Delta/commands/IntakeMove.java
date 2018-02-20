@@ -11,6 +11,8 @@
 
 package org.usfirst.frc5509.Delta.commands;
 import edu.wpi.first.wpilibj.command.Command;
+import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
+
 import org.usfirst.frc5509.Delta.Robot;
 
 /**
@@ -51,8 +53,9 @@ public class IntakeMove extends Command {
     	if(power > 0) {
     		Robot.intakeDrive.intake(power);
     	}
-    	else {
-    		Robot.intakeDrive.intake();
+    	else {		
+    		power = SmartDashboard.getNumber("x percent voltage speed, intake", 1);	
+    		Robot.intakeDrive.intake(power);
     	}
     	
     }

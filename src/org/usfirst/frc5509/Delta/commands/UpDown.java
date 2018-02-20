@@ -11,6 +11,8 @@
 package org.usfirst.frc5509.Delta.commands;
 
 import edu.wpi.first.wpilibj.command.Command;
+import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
+
 import org.usfirst.frc5509.Delta.Robot;
 
 /**
@@ -50,7 +52,17 @@ public class UpDown extends Command {
 			move = 0;
 		}
 		move = Math.pow(move, 3);
-
+		
+		
+		double presetSpeed = SmartDashboard.getNumber("preset lift speed", .5);
+		
+		if (Robot.oi.joystick2.getPOV() == 0) {
+			move = -presetSpeed;
+		}
+		else if (Robot.oi.joystick2.getPOV() == 180) {
+			move = presetSpeed;		
+		}
+		
 		Robot.liftDrive.run(-move);
 	}
 
