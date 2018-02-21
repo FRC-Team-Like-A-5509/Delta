@@ -48,7 +48,7 @@ public class RightRunSame extends CommandGroup {
     	addSequential(new DriveWait(2));
     	addSequential(new turnNDegreesTimed(-90));
     	addSequential(new DriveXFeetTimed(60/12));	
-    	addSequential(new OuttakeTimed(10));
+    	addSequential(new OuttakeTimed(3));
     	
     } 
 }
