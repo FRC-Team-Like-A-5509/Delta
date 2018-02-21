@@ -75,8 +75,6 @@ public class Robot extends TimedRobot {
 		
         
         CameraServer.getInstance().startAutomaticCapture();
-        CameraServer.getInstance().startAutomaticCapture();
-        CameraServer.getInstance().getVideo();
         CameraServer.getInstance().getVideo();
 
         // Add commands to Autonomous Sendable Chooser
