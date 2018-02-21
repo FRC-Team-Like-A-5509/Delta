@@ -88,7 +88,7 @@ public class HaloDrive extends Command {
 		strafe *= multiplier;
 		turn *= multiplier;
 
-		Robot.driveTrain.DriveMecanum(-forward, -turn, strafe);
+		Robot.driveTrain.DriveMecanum(-forward, turn, strafe);
 	
 	}
 
