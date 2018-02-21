@@ -63,7 +63,7 @@ public class UpDown extends Command {
 			move = presetSpeed;		
 		}
 		
-		Robot.liftDrive.run(-move);
+		Robot.liftDrive.run(move);
 	}
 
 	// Make this return true when this Command no longer needs to run execute()

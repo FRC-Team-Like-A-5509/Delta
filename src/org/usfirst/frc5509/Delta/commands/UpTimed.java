@@ -58,7 +58,7 @@ public class UpTimed extends Command {
     // Called repeatedly when this Command is scheduled to run
     @Override
     protected void execute() {
-    	Robot.liftDrive.run(speed * Math.signum(m_distanceInInches));
+    	Robot.liftDrive.run(-speed * Math.signum(m_distanceInInches));
     }
 
     // Make this return true when this Command no longer needs to run execute()

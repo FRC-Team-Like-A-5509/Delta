@@ -117,6 +117,7 @@ public class OI {
         SmartDashboard.putData("RightForwards", new RightForwards());
         SmartDashboard.putData("RunForwards", new RunForwards());
         SmartDashboard.putData("UpTimed: upXInches", new UpTimed(0));
+        SmartDashboard.putData("UpTimed: upTenInches", new UpTimed(10));
         SmartDashboard.putData("CenterStart", new CenterStart());
         SmartDashboard.putData("CenterSame", new CenterSame());
         SmartDashboard.putData("EndGameForwards", new EndGameForwards());

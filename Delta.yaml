@@ -1107,6 +1107,10 @@ Children:
           name: upXInches
           parameters:
           - {name: distanceInInches, type: double, value: '0'}
+        - !!robotbuilder.data.properties.ParameterSet
+          name: upTenInches
+          parameters:
+          - {name: distanceInInches, type: double, value: '10'}
       Button on SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: true,
         name: Button on SmartDashboard, validators: null, value: true}
     Base: Command

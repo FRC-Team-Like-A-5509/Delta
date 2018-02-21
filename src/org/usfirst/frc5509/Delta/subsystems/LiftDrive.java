@@ -23,15 +23,13 @@ import com.ctre.phoenix.motorcontrol.can.WPI_TalonSRX;
  *
  */
 public class LiftDrive extends Subsystem {
-	public final static double LIFTLENGTHININCHES = (6*12) + 5;
-	public final static double LIFTSECONDSBOTTOMTOTOP = 2.5;
 	
 	
 	public static final String AUTONOMOUS_LIFT_SPEED_KEY = "Autonomous Lift Speed" ;
 	public static final Double AUTONOMOUS_LIFT_SPEED_DEFAULT = 1.0 ; 
 	
 	public static final String AUTONOMOUS_LIFT_SECONDSPERINCHES_KEY = "Autonomous Lift Seconds Per inches" ;
-	public static final Double AUTONOMOUS_LIFT_SECONDSPERINCHES_DEFAULT =  LIFTLENGTHININCHES / LIFTSECONDSBOTTOMTOTOP; 
+	public static final Double AUTONOMOUS_LIFT_SECONDSPERINCHES_DEFAULT =  .11; 
 	//test by timing the time it takes to go bottom to top
 
 	
