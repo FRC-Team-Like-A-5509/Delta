@@ -103,8 +103,6 @@ public class OI {
         SmartDashboard.putData("UpDown", new UpDown());
         SmartDashboard.putData("TriggerIntake", new TriggerIntake());
         SmartDashboard.putData("TurnNDegreesBangBang: ninety", new TurnNDegreesBangBang(90));
-        SmartDashboard.putData("TurnNDegreesPID: ninety", new TurnNDegreesPID(90));
-        SmartDashboard.putData("DriveXFeetPID: five", new DriveXFeetPID(5));
         SmartDashboard.putData("DriveWait: pauseTime", new DriveWait(0));
         SmartDashboard.putData("TankDrive", new TankDrive());
         SmartDashboard.putData("DriveCG", new DriveCG());
