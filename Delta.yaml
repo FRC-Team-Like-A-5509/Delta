@@ -1298,10 +1298,10 @@ Children:
       Run When Disabled: !!robotbuilder.data.properties.BooleanProperty {default: false,
         name: Run When Disabled, validators: null, value: false}
       Parameter presets: !!robotbuilder.data.properties.ParameterSetProperty
-        default: &id012 []
+        default: []
         name: Parameter presets
         validators: null
-        value: *id012
+        value: []
       On False Command: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
         name: On False Command, type: Command, validators: null, value: RunForwards}
       Button on SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: true,
