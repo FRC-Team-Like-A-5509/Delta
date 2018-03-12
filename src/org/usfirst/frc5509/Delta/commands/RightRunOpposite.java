@@ -50,7 +50,7 @@ public class RightRunOpposite extends CommandGroup {
     	addSequential(new DriveXFeetTimed(190.0/12));
     	addSequential(new DriveWait(2));
     	addSequential(new turnNDegreesTimed(90));
-    	addSequential(new UpTimed(3));
+    	addSequential(new UpTimed(10));
     	addSequential(new DriveWait(2));
     	addSequential(new DriveXFeetTimed(4));
     	addSequential(new DriveWait(2));
