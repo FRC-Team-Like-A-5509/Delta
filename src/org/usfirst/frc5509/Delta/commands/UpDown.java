@@ -46,6 +46,7 @@ public class UpDown extends Command {
 	@Override
 	protected void execute() {
 		double move = 0.0;
+		double multiplier = 0.0;
 		move = Robot.oi.joystick2.getRawAxis(1);
 
 		if (Math.abs(move) < .2) {
@@ -54,13 +55,20 @@ public class UpDown extends Command {
 		move = Math.pow(move, 3);
 		
 		
-		double presetSpeed = SmartDashboard.getNumber("preset lift speed", .5);
+		double presetSpeed = SmartDashboard.getNumber("preset lift speed", 1);
 		
 		if (Robot.oi.joystick2.getPOV() == 0) {
+			
 			move = -presetSpeed;
 		}
 		else if (Robot.oi.joystick2.getPOV() == 180) {
+			
 			move = presetSpeed;		
+		}
+		
+		if(Robot.oi.joystick2.getRawButton(1)) {
+			multiplier = SmartDashboard.getNumber("modified lift speed", .5);
+			move *= multiplier;
 		}
 		
 		Robot.liftDrive.run(move);
