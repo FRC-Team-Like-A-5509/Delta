@@ -48,7 +48,7 @@ public class RightRunScale extends CommandGroup {
     	addSequential(new DriveWait(3));
     	addSequential(new turnNDegreesTimed(90));
     	addSequential(new DriveWait(3));
-    	addParallel(new UpTimed(50));
+    	addParallel(new UpTimed(81));
     	addSequential(new DriveWait(3));
     	addSequential(new DriveXFeetTimed(4));
     	addSequential(new DriveWait(2));
