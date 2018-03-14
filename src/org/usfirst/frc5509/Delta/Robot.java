@@ -77,8 +77,6 @@ public class Robot extends TimedRobot {
       CameraServer camera;
       camera = CameraServer.getInstance();
       camera.startAutomaticCapture("cam2" , 0);
-
-    
       camera.startAutomaticCapture("cam1" , 1);
 
         // Add commands to Autonomous Sendable Chooser
