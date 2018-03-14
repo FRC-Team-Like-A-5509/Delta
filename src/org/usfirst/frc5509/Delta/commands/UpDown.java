@@ -67,8 +67,8 @@ public class UpDown extends Command {
 		}
 		
 		if(Robot.oi.joystick2.getRawButton(1)) {
-			multiplier = SmartDashboard.getNumber("modified lift speed", .5);
-			move *= multiplier;
+			
+			move *= .5;
 		}
 		
 		Robot.liftDrive.run(move);
