@@ -52,7 +52,7 @@ public class UpDown extends Command {
 		if (Math.abs(move) < .2) {
 			move = 0;
 		}
-		move = Math.pow(move, 3);
+		move = Math.pow(move, 7);
 		
 		
 		double presetSpeed = SmartDashboard.getNumber("preset lift speed", 1);
