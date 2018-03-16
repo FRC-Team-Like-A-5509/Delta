@@ -46,7 +46,7 @@ public class OuttakeMove extends Command {
     @Override
     protected void execute() {
     	double power = 0.0;
-    	power = Robot.oi.joystick2.getRawAxis(3);
+    	power = Robot.oi.joystick2.getRawAxis(2);
     	if(power > 0) {
     		Robot.intakeDrive.outtake(power);
     	}else {

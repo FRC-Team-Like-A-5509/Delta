@@ -48,7 +48,7 @@ public class IntakeMove extends Command {
     @Override
     protected void execute() {
     	double power = 0.0;
-    	power = Robot.oi.joystick2.getRawAxis(2);
+    	power = Robot.oi.joystick2.getRawAxis(3);
     	
     	if(power > 0) {
     		Robot.intakeDrive.intake(power);

@@ -234,44 +234,15 @@ Children:
           default: '1'
           name: Button
           validators: null
-          value: '1'
-        Command: !!robotbuilder.data.properties.TypeSelectionProperty
-          default: None
-          name: Command
-          type: Command
-          validators: &id005 [TypeDropdownSelected]
-          value: IntakeMove
-        When to Run: !!robotbuilder.data.properties.ChoicesProperty
-          choices: &id006 [whileHeld, whenPressed, whenReleased]
-          default: whileHeld
-          name: When to Run
-          validators: null
-          value: whileHeld
-      Base: Joystick Button
-      Name: Joystick Button 3
-    - Children: []
-      Properties:
-        Joystick: !!robotbuilder.data.properties.ParentProperty {default: parent,
-          name: Joystick, validators: null, value: Joystick 2}
-        Parameters: !!robotbuilder.data.properties.ParametersProperty
-          default: []
-          name: Parameters
-          validators: null
-          value: []
-        Button: !!robotbuilder.data.properties.ChoicesProperty
-          choices: *id004
-          default: '1'
-          name: Button
-          validators: null
           value: '4'
         Command: !!robotbuilder.data.properties.TypeSelectionProperty
           default: None
           name: Command
           type: Command
-          validators: *id005
+          validators: &id005 [TypeDropdownSelected]
           value: OuttakeMove
         When to Run: !!robotbuilder.data.properties.ChoicesProperty
-          choices: *id006
+          choices: &id006 [whileHeld, whenPressed, whenReleased]
           default: whileHeld
           name: When to Run
           validators: null
@@ -1238,15 +1209,15 @@ Children:
       Run When Disabled: !!robotbuilder.data.properties.BooleanProperty {default: false,
         name: Run When Disabled, validators: null, value: false}
       Parameter presets: !!robotbuilder.data.properties.ParameterSetProperty
-        default: &id012 []
+        default: []
         name: Parameter presets
         validators: null
-        value: *id012
+        value: []
       Commands: !!robotbuilder.data.properties.ListProperty
-        default: &id013 []
+        default: []
         name: Commands
         validators: *id009
-        value: *id013
+        value: []
       Button on SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: true,
         name: Button on SmartDashboard, validators: null, value: true}
     Base: Command Group
@@ -1263,15 +1234,15 @@ Children:
       Run When Disabled: !!robotbuilder.data.properties.BooleanProperty {default: false,
         name: Run When Disabled, validators: null, value: false}
       Parameter presets: !!robotbuilder.data.properties.ParameterSetProperty
-        default: &id014 []
+        default: []
         name: Parameter presets
         validators: null
-        value: *id014
+        value: []
       Commands: !!robotbuilder.data.properties.ListProperty
-        default: &id015 []
+        default: []
         name: Commands
         validators: *id009
-        value: *id015
+        value: []
       Button on SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: true,
         name: Button on SmartDashboard, validators: null, value: true}
     Base: Command Group
@@ -1288,15 +1259,15 @@ Children:
       Run When Disabled: !!robotbuilder.data.properties.BooleanProperty {default: false,
         name: Run When Disabled, validators: null, value: false}
       Parameter presets: !!robotbuilder.data.properties.ParameterSetProperty
-        default: &id016 []
+        default: []
         name: Parameter presets
         validators: null
-        value: *id016
+        value: []
       Commands: !!robotbuilder.data.properties.ListProperty
-        default: &id017 []
+        default: []
         name: Commands
         validators: *id009
-        value: *id017
+        value: []
       Button on SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: true,
         name: Button on SmartDashboard, validators: null, value: true}
     Base: Command Group
@@ -1315,10 +1286,10 @@ Children:
       Run When Disabled: !!robotbuilder.data.properties.BooleanProperty {default: false,
         name: Run When Disabled, validators: null, value: false}
       Parameter presets: !!robotbuilder.data.properties.ParameterSetProperty
-        default: &id018 []
+        default: []
         name: Parameter presets
         validators: null
-        value: *id018
+        value: []
       On False Command: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
         name: On False Command, type: Command, validators: null, value: LeftSwitchStart}
       Button on SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: true,
@@ -1339,10 +1310,10 @@ Children:
       Run When Disabled: !!robotbuilder.data.properties.BooleanProperty {default: false,
         name: Run When Disabled, validators: null, value: false}
       Parameter presets: !!robotbuilder.data.properties.ParameterSetProperty
-        default: &id019 []
+        default: []
         name: Parameter presets
         validators: null
-        value: *id019
+        value: []
       On False Command: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
         name: On False Command, type: Command, validators: null, value: RightSwitchStart}
       Button on SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: true,
@@ -1353,7 +1324,7 @@ Children:
   Base: Commands
   Name: Commands
 Properties:
-  Eclipse Workspace: !!robotbuilder.data.properties.FileProperty {default: 'C:\Users\Robots\workspace',
+  Eclipse Workspace: !!robotbuilder.data.properties.FileProperty {default: 'C:\Users\frcte\workspace',
     extension: null, folder: true, name: Eclipse Workspace, validators: null, value: 'C:\workspace'}
   Export Commands: !!robotbuilder.data.properties.BooleanProperty {default: true,
     name: Export Commands, validators: null, value: true}
@@ -1372,7 +1343,7 @@ Properties:
     name: Export Subsystems, validators: null, value: true}
   Simulation World File: !!robotbuilder.data.properties.StringProperty {default: /usr/share/frcsim/worlds/GearsBotDemo.world,
     name: Simulation World File, validators: null, value: /usr/share/frcsim/worlds/GearsBotDemo.world}
-  Wiring file location: !!robotbuilder.data.properties.FileProperty {default: 'C:\Users\Robots\',
+  Wiring file location: !!robotbuilder.data.properties.FileProperty {default: 'C:\Users\frcte\',
     extension: null, folder: true, name: Wiring file location, validators: null, value: 'C:\Users\Robots\'}
   Autonomous Command: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
     name: Autonomous Command, type: Command, validators: null, value: Autonomous Command}

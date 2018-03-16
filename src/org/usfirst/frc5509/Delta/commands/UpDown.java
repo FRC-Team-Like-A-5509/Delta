@@ -66,7 +66,7 @@ public class UpDown extends Command {
 			move = presetSpeed;		
 		}
 		
-		if(Robot.oi.joystick2.getRawButton(1)) {
+		if(move > 0) {
 			
 			move *= .5;
 		}

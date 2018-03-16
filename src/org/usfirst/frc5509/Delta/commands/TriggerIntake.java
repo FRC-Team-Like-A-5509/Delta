@@ -44,8 +44,8 @@ public class TriggerIntake extends Command {
     @Override
     protected void execute() {
     	double speed = 0.0;
-		speed += Robot.oi.joystick2.getRawAxis(2);
-		speed -= Robot.oi.joystick2.getRawAxis(3);
+		speed += Robot.oi.joystick2.getRawAxis(3);
+		speed -= Robot.oi.joystick2.getRawAxis(2);
 		Robot.intakeDrive.intake(speed);
     }
 
