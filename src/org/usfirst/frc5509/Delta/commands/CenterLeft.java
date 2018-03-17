@@ -44,15 +44,15 @@ public class CenterLeft extends CommandGroup {
 		addParallel(new UpTimed(13));
 
 		addSequential(new DriveXFeetTimed(42.0 / 12));
-		addSequential(new DriveWait(3));
-		addSequential(new turnNDegreesTimed(90));
-		addSequential(new DriveWait(3));
-		addSequential(new DriveXFeetTimed(60 / 12));
-		addSequential(new DriveWait(3));
+		addSequential(new DriveWait(1));
 		addSequential(new turnNDegreesTimed(-90));
-		addSequential(new DriveWait(3));
-		addSequential(new DriveXFeetTimed(70.0 / 12));
-		addSequential(new DriveWait(3));
+		addSequential(new DriveWait(1));
+		addSequential(new DriveXFeetTimed(60.0 / 12));
+		addSequential(new DriveWait(1));
+		addSequential(new turnNDegreesTimed(-90));
+		addSequential(new DriveWait(1));
+		addSequential(new DriveXFeetTimed(110.0 / 12));
+		addSequential(new DriveWait(2));
 		addSequential(new OuttakeTimed(10));
 	}
 }

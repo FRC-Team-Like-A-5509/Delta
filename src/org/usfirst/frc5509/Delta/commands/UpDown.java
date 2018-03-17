@@ -53,7 +53,7 @@ public class UpDown extends Command {
 			move = 0;
 		}
 		move = Math.pow(move, 7);
-		
+		move*= .85;
 		
 		double presetSpeed = SmartDashboard.getNumber("preset lift speed", 1);
 		
@@ -68,7 +68,7 @@ public class UpDown extends Command {
 		
 		if(move > 0) {
 			
-			move *= .5;
+			move *= .75;
 		}
 		
 		Robot.liftDrive.run(move);
