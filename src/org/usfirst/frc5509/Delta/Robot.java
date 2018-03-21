@@ -88,6 +88,8 @@ public class Robot extends TimedRobot {
         chooser.addObject("RightSwitchStart", new RightSwitchStart());
         chooser.addObject("RunForwards", new RunForwards());
         chooser.addObject("CenterSwitchStart", new CenterSwitchStart());
+        chooser.addObject("LeftStartScale", new LeftStartScale());
+        chooser.addObject("RightStartScale", new RightStartScale());
         chooser.addObject("RunForwardsNoLift", new RunForwardsNoLift());
         chooser.addDefault("Autonomous Command", new AutonomousCommand());
 
