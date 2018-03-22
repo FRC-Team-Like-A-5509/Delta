@@ -49,12 +49,13 @@ public class CenterRight extends CommandGroup {
     	addSequential(new DriveWait(1));
     	addSequential(new turnNDegreesTimed(90));
     	addSequential(new DriveWait(1));
-    	addSequential(new DriveXFeetTimed(50.0/12));
+    	addSequential(new DriveXFeetTimed(60.0/12));
     	addSequential(new DriveWait(1));
-    	addSequential(new turnNDegreesTimed(90));
+    	addSequential(new turnNDegreesTimed(-90));
     	addSequential(new DriveWait(1));
+    	addParallel(new UpTimed(13));
     	addSequential(new DriveXFeetTimed(110.0/12));
-    	addSequential(new DriveWait(2));
+    	addSequential(new DriveWait(1));
     	addSequential(new OuttakeTimed(10));
     } 
 }
