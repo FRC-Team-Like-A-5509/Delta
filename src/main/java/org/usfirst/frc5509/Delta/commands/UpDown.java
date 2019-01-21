@@ -56,6 +56,7 @@ public class UpDown extends Command {
 		
 		double presetSpeed = SmartDashboard.getNumber("preset lift speed", 1);
 		
+		/*
 		if (Robot.oi.joystick2.getPOV() == 0) {
 			
 			move = -presetSpeed;
@@ -64,6 +65,7 @@ public class UpDown extends Command {
 			
 			move = presetSpeed;		
 		}
+		*/
 		
 		if(move > 0) {
 			
